@@ -1,6 +1,6 @@
 # PRD: [Title]
 
-**Status:** [Draft / In-Review / Approved / Implemented / Rejected]
+**Status:** [Draft / In-Review / Approved / Implemented / Rejected] </br>
 **Version:** [e.g., 0.1]
 
 ## 1. Executive Summary
@@ -15,8 +15,8 @@
 
 ### 3.1 Functional Requirements (FRs)
 
-*What should the system do? (Bulleted list)*</br>
-*"As a [Role], I want to [Action], so that [Value]."*
+*What should the system do? (Bulleted list)* or user stories like:</br>
+_*"As a [Role], I want to [Action], so that [Value]."*_
 
 * **[FR-01]:** Description of core functionality.
 * **[FR-02]:** Description of peripheral functionality.
@@ -30,24 +30,17 @@
 * **Latency:** (e.g., P99 response time targets).
 * **Security:** (e.g., AuthN/AuthZ, data at rest/transit).
 
-## 4. Proposed Technical Solution
-
-*A high-level description of how this will be implemented.*
-
-* **Key Components:** (e.g., Ingestion API, Message Broker, Worker).
-* **Data Flow:** (A short description of the path a request takes).
-
-## 5. Success Metrics & Verification
+## 4. Success Metrics & Verification
 
 *How do we prove this version is successful?*
 
 * **Metric 1:** (e.g., P99 latency < 100ms, 0% message loss, successful end-to-end delivery of 1000 messages/sec).
 * **Testing Plan:** (e.g., Unit tests, Integration tests, Load tests).
 
-## 6. Open Questions & Risks
+## 5. Open Questions & Risks
 
 *List of unknowns or potential bottlenecks.*
 
-## 7. Future Scope
+## 6. Future Scope
 
 *What are we explicitly NOT doing in this version? (Essential for preventing scope creep).*
