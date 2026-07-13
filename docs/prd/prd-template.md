@@ -5,11 +5,12 @@
 
 ## 1. Executive Summary
 
-*What is the technical problem or limitation we are solving?*
+*One or two sentences explaining the goal of this version.*
 
 ## 2. Background & Problem Statement
 
-*Why is this specific feature/system version necessary now?*
+*What is the technical problem or limitation we are solving?*
+*Why is this specific feature/system/version necessary now?*
 
 ## 3. Requirements
 
