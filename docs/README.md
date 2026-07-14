@@ -16,14 +16,6 @@ To keep the history ordered, use a numeric prefix:
 * **[ADR](./adr)**: \`001-name.md\`
 * **[TDD](./tdd)**: \`001-name.md\`
 
-## Document Status Definitions
-
-- **DRAFT**: The document is being actively written; ideas are subject to change.
-- **IN-REVIEW**: The design is mostly complete; verifying against technical constraints.
-- **APPROVED**: The "Contract." Implementation must follow this spec.
-- **IMPLEMENTED**: The feature is built; this document acts as the reference for the current state.
-- **REJECTED**: The proposal was considered but will not be pursued.
-
 ## Contribution Note
 
 - Every significant change should start with a _**PRD**._
@@ -47,3 +39,13 @@ gateway) is down:
 2. ADR: Written during the research phase, **never** changes (it is a historical record!).
 3. TDD: Written right before coding, acts as the blueprint. It may be updated if the implementation changes during
    development.
+
+## Document Status Definitions
+
+| Status | Description |
+| :--- | :--- |
+| **DRAFT** | The document is being actively written; ideas are subject to change. |
+| **IN-REVIEW** | The design is mostly complete; verifying against technical constraints. |
+| **APPROVED** | The "Contract." Implementation must follow this spec. |
+| **IMPLEMENTED** | The feature is built; this document acts as the reference for the current state. |
+| **REJECTED** | The proposal was considered but will not be pursued. |
