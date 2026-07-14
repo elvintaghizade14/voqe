@@ -1,6 +1,6 @@
 # PRD: [Title]
 
-**Status:** [Draft / In-Review / Approved / Implemented / Rejected] </br>
+**Status:** [DRAFT / IN-REVIEW / APPROVED / IMPLEMENTED / REJECTED] </br>
 **Version:** [e.g., 0.1]
 
 ## 1. Executive Summary
