@@ -1,2 +1,4 @@
 # voqe
-A highly scalable and reliable, multi-channel notification management system.
+
+Distributed notification orchestration system. The objective is to build a robust, scalable backend for
+managing multi-channel notifications with a focus on fault tolerance and observability.
