@@ -1,4 +1,4 @@
-# Voqe Documentation
+# Voqe Documentation Guide
 
 This directory contains the engineering documentation for the Voqe project.
 
@@ -8,15 +8,21 @@ This directory contains the engineering documentation for the Voqe project.
 * **[ADR](./adr)**: _**WHY**_ we chose specific architectures. The historical rationale behind technical trade-offs.
 * **[TDD](./tdd)**: _**HOW**_ we are implementing the features. The technical blueprint before writing code.
 
----
-
 ## Naming Convention
 
 To keep the history ordered, use a numeric prefix:
 
-* **PRDs**: \`001-v0.1-name.md\`
-* **ADRs**: \`001-name.md\`
-* **TDDs**: \`001-name.md\`
+* **[PRD](./prd)**: \`001-v0.1-name.md\`
+* **[ADR](./adr)**: \`001-name.md\`
+* **[TDD](./tdd)**: \`001-name.md\`
+
+## Document Status Definitions
+
+- **DRAFT**: The document is being actively written; ideas are subject to change.
+- **IN-REVIEW**: The design is mostly complete; verifying against technical constraints.
+- **APPROVED**: The "Contract." Implementation must follow this spec.
+- **IMPLEMENTED**: The feature is built; this document acts as the reference for the current state.
+- **REJECTED**: The proposal was considered but will not be pursued.
 
 ## Contribution Note
 
@@ -38,6 +44,6 @@ gateway) is down:
 ## The "Documentation Lifecycle"
 
 1. PRD: Written first, stays relatively stable.
-2. ADR: Written during the research phase, never changes (it is a historical record).
+2. ADR: Written during the research phase, **never** changes (it is a historical record!).
 3. TDD: Written right before coding, acts as the blueprint. It may be updated if the implementation changes during
    development.
