@@ -13,6 +13,6 @@
 
 ## Phase 1: The Walking Skeleton (v0.1)
 
-* [ ] Basic HTTP Ingestion API
-* [ ] Persistence Layer (Save notification requests)
-* [ ] Basic "Hello World" Worker
+* [ ] **_TBD_**
+* [ ] **_TBD_**
+* [ ] **_TBD_**
