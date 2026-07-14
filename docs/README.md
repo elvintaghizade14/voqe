@@ -42,10 +42,10 @@ gateway) is down:
 
 ## Document Status Definitions
 
-| Status | Description |
-| :--- | :--- |
-| **DRAFT** | The document is being actively written; ideas are subject to change. |
-| **IN-REVIEW** | The design is mostly complete; verifying against technical constraints. |
-| **APPROVED** | The "Contract." Implementation must follow this spec. |
+| Status          | Description                                                                      |
+|:----------------|:---------------------------------------------------------------------------------|
+| **DRAFT**       | The document is being actively written; ideas are subject to change.             |
+| **IN-REVIEW**   | The design is mostly complete; verifying against technical constraints.          |
+| **APPROVED**    | The "Contract." Implementation must follow this spec.                            |
 | **IMPLEMENTED** | The feature is built; this document acts as the reference for the current state. |
-| **REJECTED** | The proposal was considered but will not be pursued. |
+| **REJECTED**    | The proposal was considered but will not be pursued.                             |
