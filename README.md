@@ -5,6 +5,4 @@ managing multi-channel notifications with a focus on fault tolerance and observa
 
 ---
 
-## Roadmap
-
 See our [ROADMAP.md](./ROADMAP.md) for the high-level project trajectory, planned phases, and major milestones.
