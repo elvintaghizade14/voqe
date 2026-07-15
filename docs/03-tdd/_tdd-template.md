@@ -32,7 +32,7 @@ Template Source: Inspired by Google's Software Design Doc Guidelines & Tanya Rei
 *Describe the components and how they interact. A Mermaid.js diagram is highly recommended here.*
 
 ```mermaid
-    graph TD
+graph TD
     Client[Client Application] -->|HTTP POST /v1/events| API[API Gateway]
     API -->|Publish| Broker[Message Broker]
     Broker -->|Consume| Worker[Background Worker]
@@ -62,7 +62,7 @@ Template Source: Inspired by Google's Software Design Doc Guidelines & Tanya Rei
       "channel": "EMAIL",
       "template_id": "tpl_welcome",
       "variables": {
-          "fullname": "Elvin Taghziade"
+          "fullname": "Name Surname"
       }
   }
   ```
