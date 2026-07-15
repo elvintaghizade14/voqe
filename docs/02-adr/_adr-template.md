@@ -7,6 +7,7 @@ Reference: https://adr.github.io/madr/
 
 ---
 **Status:** [PROPOSED | ACCEPTED | DEPRECATED | SUPERSEDED] <br />
+**Version:** [e.g., 0.1] <br />
 **Date:** [YYYY-MM-DD] <br />
 **Author:** [Name Surname]
 ---
