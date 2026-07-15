@@ -1,8 +1,8 @@
 # PRD: [Title]
 
 ---
-**Status:** [DRAFT / IN-REVIEW / APPROVED / IMPLEMENTED / REJECTED] </br>
-**Version:** [e.g., 0.1] </br>
+**Status:** [DRAFT / IN-REVIEW / APPROVED / IMPLEMENTED / REJECTED] <br />
+**Version:** [e.g., 0.1] <br />
 **Author:** [Name Surname]
 ---
 
@@ -19,8 +19,8 @@
 
 ### 3.1 Functional Requirements (FRs)
 
-*What should the system do? (Bulleted list)* or user stories like:
-_*"As a **[Role]**, I want to **[Action]**, so that **[Value].**"*_
+*What should the system do? (Bulleted list)* or user stories like:<br />
+*"As a **[Role]**, I want to **[Action]**, so that **[Value].**"*
 
 * **[FR-01]:** Description of core functionality.
 * **[FR-02]:** Description of peripheral functionality.
