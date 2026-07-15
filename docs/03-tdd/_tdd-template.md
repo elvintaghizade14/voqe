@@ -1,8 +1,17 @@
+<!-- 
+Template Source: Inspired by Google's Software Design Doc Guidelines & Tanya Reilly's RFC Standard
+-->
+
 # TDD: [Title]
 
-**Status:** [DRAFT / APPROVED] </br>
-**Related PRD:** [Link to PRD] </br>
+---
+**Status:** [DRAFT | IN REVIEW | APPROVED | SUPERSEDED] <br />
+**Version:** [e.g., 0.1] <br />
+**Date:** [YYYY-MM-DD] <br />
+**Author:** [Name Surname] <br />
+**Related PRD:** [Link to PRD] <br />
 **Related ADRs:** [Link to ADRs]
+---
 
 ## 1. Overview
 
