@@ -1,3 +1,8 @@
+<!-- 
+Template Source: Atlassian Agile PRD Framework & SVPG (Silicon Valley Product Group) Principles
+Reference: https://www.svpg.com/ / https://www.atlassian.com/agile/product-management/requirements
+-->
+
 # PRD: [Title]
 
 ---
