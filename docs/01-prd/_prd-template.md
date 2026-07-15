@@ -1,7 +1,10 @@
 # PRD: [Title]
 
+---
 **Status:** [DRAFT / IN-REVIEW / APPROVED / IMPLEMENTED / REJECTED] </br>
-**Version:** [e.g., 0.1]
+**Version:** [e.g., 0.1] </br>
+**Author:** [Name Surname]
+---
 
 ## 1. Executive Summary
 
