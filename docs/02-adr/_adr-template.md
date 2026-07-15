@@ -51,7 +51,7 @@ Reference: https://adr.github.io/madr/
 
 * *e.g. Requires sufficient RAM, complex cluster management, steeper learning curve for new hires*
 
-## Confirmation
+## 6. Confirmation
 
 *Describe how compliance with this ADR will be confirmed*
 
