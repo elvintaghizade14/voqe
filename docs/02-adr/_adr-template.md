@@ -6,15 +6,15 @@ Reference: https://adr.github.io/madr/
 # ADR [Number]: [Title]
 
 ---
-**Status:** [PROPOSED | ACCEPTED | DEPRECATED | SUPERSEDED] </br>
-**Date:** [YYYY-MM-DD] </br>
+**Status:** [PROPOSED | ACCEPTED | DEPRECATED | SUPERSEDED] <br />
+**Date:** [YYYY-MM-DD] <br />
 **Author:** [Name Surname]
 ---
 
 ## 1. Context & Problem Statement
 
-*Describe the context and problem statement in 1-2 paragraphs.*</br>
-*What is the specific architectural or engineering problem we are trying to solve?*</br>
+*Describe the context and problem statement in 1-2 paragraphs.*<br />
+*What is the specific architectural or engineering problem we are trying to solve?*<br />
 *Avoid solution-bias here; just state the problem.*
 
 ## 2. Decision Drivers (Constraints & Requirements)
@@ -36,19 +36,26 @@ Reference: https://adr.github.io/madr/
 ## 4. Decision Outcome
 
 *What did we choose and why?*
-*(e.g., "We chose Option 3 because...")*
+
+* *(e.g., "We chose Option 3 because...")*
 
 ## 5. Consequences
 
 *What are the trade-offs of this decision?*
 
-### 6.1. Positive
+### 5.1. Positive
 
 * *e.g. Easy to set up, low latency, native JSON support*
 
-### 6.2. Negative / Risks
+### 5.2. Negative / Risks
 
 * *e.g. Requires sufficient RAM, complex cluster management, steeper learning curve for new hires*
+
+## Confirmation
+
+*Describe how compliance with this ADR will be confirmed*
+
+* *e.g., "A load test in the CI pipeline will verify the 10k connection requirement."*
 
 ## 7. Notes & References
 
