@@ -4,17 +4,17 @@ This directory contains the engineering documentation for the Voqe project.
 
 ## Document Hierarchy
 
-* **[PRD](./prd)**: _**WHAT**_ we are building. The requirements and scope for each version.
-* **[ADR](./adr)**: _**WHY**_ we chose specific architectures. The historical rationale behind technical trade-offs.
-* **[TDD](./tdd)**: _**HOW**_ we are implementing the features. The technical blueprint before writing code.
+* **[PRD](01-prd)**: _**WHAT**_ we are building. The requirements and scope for each version.
+* **[ADR](02-adr)**: _**WHY**_ we chose specific architectures. The historical rationale behind technical trade-offs.
+* **[TDD](03-tdd)**: _**HOW**_ we are implementing the features. The technical blueprint before writing code.
 
 ## Naming Convention
 
 To keep the history ordered, use a numeric prefix:
 
-* **[PRD](./prd)**: \`001-v0.1-name.md\`
-* **[ADR](./adr)**: \`001-name.md\`
-* **[TDD](./tdd)**: \`001-name.md\`
+* **[PRD](01-prd)**: \`001-v0.1-name.md\`
+* **[ADR](02-adr)**: \`001-name.md\`
+* **[TDD](03-tdd)**: \`001-name.md\`
 
 ## Contribution Note
 
