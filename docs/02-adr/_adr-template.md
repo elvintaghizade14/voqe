@@ -5,9 +5,11 @@ Reference: https://adr.github.io/madr/
 
 # ADR [Number]: [Title]
 
-**Status:** **[PROPOSED | ACCEPTED | DEPRECATED | SUPERSEDED]** </br>
+---
+**Status:** [PROPOSED | ACCEPTED | DEPRECATED | SUPERSEDED] </br>
 **Date:** [YYYY-MM-DD] </br>
 **Author:** [Name Surname]
+---
 
 ## 1. Context & Problem Statement
 
@@ -40,14 +42,14 @@ Reference: https://adr.github.io/madr/
 
 *What are the trade-offs of this decision?*
 
-### 5.1. Positive
+### 6.1. Positive
 
 * *e.g. Easy to set up, low latency, native JSON support*
 
-### 5.2. Negative / Risks
+### 6.2. Negative / Risks
 
 * *e.g. Requires sufficient RAM, complex cluster management, steeper learning curve for new hires*
 
-## 5. Notes & References
+## 7. Notes & References
 
 *Links to benchmarks, documentation, original GitHub issues, or related PRDs.*
