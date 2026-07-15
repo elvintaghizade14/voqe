@@ -13,25 +13,69 @@ Template Source: Inspired by Google's Software Design Doc Guidelines & Tanya Rei
 **Related ADRs:** [Link to ADRs]
 ---
 
-## 1. Overview
+## 1. Overview & Objectives
 
-High-level summary of the implementation strategy.
+*Keep this high-level. A 3-sentence summary of what technical system/change is being built and why.*
+
+### 1.1. Goals
+
+* *What must this technical implementation successfully achieve?*
+* *e.g., Support P95 write latencies under 50ms.*
+
+### 1.2. Non-Goals
+
+* *What are we explicitly NOT implementing or optimizing for in this design?*
+* *e.g., We are not designing for auto-scaling database nodes in this phase.*
 
 ## 2. System Architecture
 
-- **Diagram/Flow:** (Use Mermaid or describe the interaction)
-- **Data Flow:** How data enters and leaves the system.
+*Describe the components and how they interact. A Mermaid.js diagram is highly recommended here.*
+
+```mermaid
+    graph TD
+    Client[Client Application] -->|HTTP POST /v1/events| API[API Gateway]
+    API -->|Publish| Broker[Message Broker]
+    Broker -->|Consume| Worker[Background Worker]
+    Worker -->|Write| DB[(Database)]
+```
+
+### 2.1. Component Breakdown
+
+* *[Component A]: What is its responsibility? (e.g., API Service).*
+* *[Component B]: What is its responsibility? (e.g., Worker Daemon).*
+
+### 2.2. Data Flow & Sequence
+
+*Step-by-step walk-through of how data travels through the system during a core operation.*
 
 ## 3. Implementation Details
 
-### 3.1 API Contracts
+### 3.1. Interface Contracts (APIs / Events)
 
-Define your endpoints (e.g., `POST /v1/notifications`).
+*Include endpoint paths, HTTP verbs, payload structures, and expected response codes.*
 
-- **Request Schema:**
-- **Response Schema:**
+* *Endpoint: `POST /v1/notifications`*
+* *Request Payload:*
+  ```
+  {
+      "recipient_id": "usr_123456",
+      "channel": "EMAIL",
+      "template_id": "tpl_welcome",
+      "variables": {
+          "fullname": "Elvin Taghziade"
+      }
+  }
+  ```
 
-### 3.2 Database Schema
+* *Response Payload: `200 OK`*
+  ```
+  {
+      "notification_id": "not_987654",
+      "status": "SENT"
+  }
+  ```
+
+### 3.2 Database & Schema Design
 
 Describe the entities and relationships.
 
