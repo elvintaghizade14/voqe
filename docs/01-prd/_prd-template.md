@@ -3,6 +3,7 @@
 ---
 **Status:** [DRAFT / IN-REVIEW / APPROVED / IMPLEMENTED / REJECTED] <br />
 **Version:** [e.g., 0.1] <br />
+**Date:** [YYYY-MM-DD] <br />
 **Author:** [Name Surname]
 ---
 
