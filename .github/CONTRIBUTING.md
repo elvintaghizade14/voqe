@@ -34,7 +34,7 @@ Structure your branch names using the following formats:
 * `feature/[Ticket-Id]-[short-description]` — For new functional capabilities or architectural components.
 * `refactor/[Ticket-Id]-[short-description]` — For code reorganization without functional changes.
 
-*Example:* `feature/[VOQE-1]v0.1-walking-skeleton` or `bugfix/redis-connection-leak`
+*Example:* `feature/VOQE-1-v0.1-walking-skeleton` or `bugfix/VOQE-2-redis-connection-leak`
 
 ---
 
@@ -44,8 +44,3 @@ We strictly enforce the **Conventional Commits** specification. This keeps our G
 allows us to automate changelog generation.
 
 Commit messages must use the following structural format:
-
-```text
-<type>(<scope>): <description>
-
-[optional body]
