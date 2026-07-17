@@ -18,7 +18,7 @@ Reference: https://www.svpg.com/ / https://www.atlassian.com/agile/product-manag
 
 ## 2. Background & Problem Statement
 
-*What is the technical problem or limitation we are solving?*
+*What is the technical problem or limitation we are solving?* <br />
 *Why is this specific feature/system/version necessary now?*
 
 ## 3. Requirements
