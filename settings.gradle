@@ -1,3 +1,11 @@
 rootProject.name = 'voqe'
 
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            from(files("gradle/libs.versions.toml"))
+        }
+    }
+}
+
 // include 'abc-service'
