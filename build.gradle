@@ -28,8 +28,9 @@ subprojects {
 
     // Standardize Checkstyle across all modules
     checkstyle {
-        toolVersion = "10.14.2"
-        // Fails the build if there are any Checkstyle violations
+        toolVersion = libs.versions.checkstyleTool.get()
+        configFile = rootProject.file("config/checkstyle/checkstyle.xml")
+        // Fails the build ifs there are any Checkstyle violations
         maxErrors = 0
         maxWarnings = 0
         // Reads the toggle from the skipCheckstyle property we set in gradle.properties
@@ -39,6 +40,7 @@ subprojects {
     // Ensures Spring Cloud versions are aligned across all modules
     dependencyManagement {
         imports {
+            mavenBom libs.spring.boot.dependencies.get().toString()
             mavenBom libs.spring.cloud.dependencies.get().toString()
         }
     }
@@ -59,7 +61,7 @@ subprojects {
         useJUnitPlatform()
     }
 
-    // Aggregates the build lifecycle across all subprojects when running './gradlew build' from the root
+    // TODO: Delete the build task registration it will throw task already exists the moment a module is uncommented:
     tasks.register('build') {
         dependsOn subprojects.collect { it.tasks.named('build') }
     }
