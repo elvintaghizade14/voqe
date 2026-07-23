@@ -1,8 +1,8 @@
 // root build.gradle
 plugins {
     // Apply Spring dependency management globally without applying the Spring Boot plugin itself
-    alias(libs.plugins.spring.dependency.management) apply false
     alias(libs.plugins.spring.boot) apply false
+    alias(libs.plugins.spring.dependency.management) apply false
 }
 
 subprojects {
@@ -20,6 +20,7 @@ subprojects {
     }
 
     repositories {
+        mavenLocal()
         mavenCentral()
     }
 
@@ -29,16 +30,25 @@ subprojects {
         // Fails the build if there are any Checkstyle violations
         maxErrors = 0
         maxWarnings = 0
-        // Reads from the skipCheckstyle property we set in gradle.properties
+        // Reads the toggle from the skipCheckstyle property we set in gradle.properties
         ignoreFailures = project.findProperty('skipCheckstyle') == 'true'
+    }
+
+    // Ensures Spring Cloud versions are aligned across all modules
+    dependencyManagement {
+        imports {
+            mavenBom libs.spring.cloud.dependencies.get().toString()
+        }
     }
 
     // Shared testing dependencies for every module
     dependencies {
+        // Lombok is needed everywhere
         compileOnly libs.lombok
         annotationProcessor libs.lombok
 
-        testImplementation libs.assertj.core
+        // The core testing bundle we defined in libs.versions.toml
+        testImplementation libs.bundles.test.core
         testCompileOnly libs.lombok
         testAnnotationProcessor libs.lombok
     }
