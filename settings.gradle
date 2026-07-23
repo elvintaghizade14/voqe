@@ -12,11 +12,11 @@ dependencyResolutionManagement {
 // 1. SHARED LIBRARIES (The Foundation)
 // (Commented out until you initialize them)
 // ==========================================
-//include 'common-core'
-//include 'common-web'
-//include 'common-messaging'
-//include 'common-observability'
-//include 'common-testkit'
+//include 'common:common-core'
+//include 'common:common-web'
+//include 'common:common-messaging'
+//include 'common:common-observability'
+//include 'common:common-testkit'
 
 // ==========================================
 // 2. EXECUTABLE SERVICES (The Applications)
