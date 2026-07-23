@@ -1,0 +1,49 @@
+// root build.gradle
+plugins {
+    // Apply Spring dependency management globally without applying the Spring Boot plugin itself
+    alias(libs.plugins.spring.dependency.management) apply false
+    alias(libs.plugins.spring.boot) apply false
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'checkstyle'
+    apply plugin: 'io.spring.dependency-management'
+
+    group = project.property('group')
+    version = project.property('version')
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(libs.versions.java.get())
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    // Standardize Checkstyle across all modules
+    checkstyle {
+        toolVersion = "10.14.2"
+        // Fails the build if there are any Checkstyle violations
+        maxErrors = 0
+        maxWarnings = 0
+        // Reads from the skipCheckstyle property we set in gradle.properties
+        ignoreFailures = project.findProperty('skipCheckstyle') == 'true'
+    }
+
+    // Shared testing dependencies for every module
+    dependencies {
+        compileOnly libs.lombok
+        annotationProcessor libs.lombok
+
+        testImplementation libs.assertj.core
+        testCompileOnly libs.lombok
+        testAnnotationProcessor libs.lombok
+    }
+
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+    }
+}
