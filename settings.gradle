@@ -1,6 +1,10 @@
 rootProject.name = 'voqe'
 
 dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
     versionCatalogs {
         libs {
             from(files("gradle/libs.versions.toml"))
