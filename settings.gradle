@@ -8,4 +8,19 @@ dependencyResolutionManagement {
     }
 }
 
-// include 'abc-service'
+// ==========================================
+// 1. SHARED LIBRARIES (The Foundation)
+// ==========================================
+include 'common-core'
+include 'common-web'
+include 'common-messaging'
+include 'common-observability'
+include 'common-testkit'
+
+// ==========================================
+// 2. EXECUTABLE SERVICES (The Applications)
+// (Commented out until you initialize them)
+// ==========================================
+// include 'notification-gateway'
+// include 'notification-router'
+// include 'notification-worker'// include 'abc-service'
