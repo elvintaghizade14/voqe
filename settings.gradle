@@ -10,17 +10,20 @@ dependencyResolutionManagement {
 
 // ==========================================
 // 1. SHARED LIBRARIES (The Foundation)
+// (Commented out until you initialize them)
 // ==========================================
-include 'common-core'
-include 'common-web'
-include 'common-messaging'
-include 'common-observability'
-include 'common-testkit'
+//include 'common-core'
+//include 'common-web'
+//include 'common-messaging'
+//include 'common-observability'
+//include 'common-testkit'
 
 // ==========================================
 // 2. EXECUTABLE SERVICES (The Applications)
 // (Commented out until you initialize them)
 // ==========================================
-// include 'notification-gateway'
-// include 'notification-router'
-// include 'notification-worker'// include 'abc-service'
+//include 'services:orchestrator'
+//include 'services:adapter-email'
+//include 'services:adapter-sms'
+//include 'services:adapter-push'
+//include 'services:delivery-tracker'
