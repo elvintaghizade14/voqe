@@ -4,6 +4,8 @@ java = "21"
 springBoot = "3.2.4"
 springCloud = "2023.0.3"
 springDependencyManagement = "1.1.4"
+version=0.1
+group="com.voqe"
 
 # Utilities
 lombok = "1.18.30"
