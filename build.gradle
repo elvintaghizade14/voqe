@@ -1,5 +1,7 @@
 // root build.gradle
 plugins {
+    id 'idea'
+    id 'base'
     // Apply Spring dependency management globally without applying the Spring Boot plugin itself
     alias(libs.plugins.spring.boot) apply false
     alias(libs.plugins.spring.dependency.management) apply false
