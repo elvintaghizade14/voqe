@@ -58,4 +58,9 @@ subprojects {
     tasks.withType(Test).configureEach {
         useJUnitPlatform()
     }
+
+    // Aggregates the build lifecycle across all subprojects when running './gradlew build' from the root
+    tasks.register('build') {
+        dependsOn subprojects.collect { it.tasks.named('build') }
+    }
 }
