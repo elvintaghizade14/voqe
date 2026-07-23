@@ -3,14 +3,14 @@ name: CI Pipeline
 on:
   pull_request:
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
-    name: Build with Gradle
+    name: Gradle Build
     runs-on: ubuntu-latest
 
     steps:
