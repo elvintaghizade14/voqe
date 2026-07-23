@@ -1,15 +1,33 @@
 rootProject.name = 'voqe'
 
 dependencyResolutionManagement {
+    // Fails the build if any subproject tries to define its own repositories block
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
         mavenLocal()
         mavenCentral()
     }
-    versionCatalogs {
-        libs {
-            from(files("gradle/libs.versions.toml"))
-        }
-    }
+
+    // region Dependency Management (Version Catalog)
+    /*
+     * =====================================================================
+     * DEPENDENCY MANAGEMENT (Version Catalog)
+     * =====================================================================
+     * Gradle automatically discovers 'gradle/libs.versions.toml' by default.
+     * An explicit versionCatalogs block is only required if you use a custom
+     * filename or path (e.g., loading from 'gradle/libs.awesome.toml').
+     *
+     * Example of explicit registration (currently disabled in favor of auto-discovery):
+     *
+     * versionCatalogs {
+     *     libs {
+     *         from(files("gradle/libs.awesome.toml"))
+     *     }
+     * }
+     * =====================================================================
+     */
+    // endregion
 }
 
 // ==========================================
